@@ -1,36 +1,60 @@
+.about-div{
+    background-color: white;
+    color: black;
+}
+
 body{
-    background-color: #5b5d61;
+    background-color: #3c3c3d;
     color: white;
     font-family: exo-light;
+    background-image: url(Website-Design-Background.jpg)
 }
 
-#fade{
-    opacity: 0;
-    -webkit-transition: opacity 2s ease;
-    -moz-transition: opacity 2s ease;
-    -ms-transition: opacity 2s ease;
-    -o-transition: opacity 2s ease;
-    transition: opacity 2s ease;
-}
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
-#fade.in{
-    opacity: 1;
+.fade-in {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animation ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  animation-delay: 0.2s;
 }
 
 .first-img{
     border-radius: 50%;
-    width: 30%;
-    margin-top: 5%;
+    width: 100%;
+    margin-top: 25%;
     margin-left: auto;
     margin-right: auto;
 }
 
+.header-div{
+    width: 410px;
+    margin: auto;
+    font-size: 50px;
+}
+
 .img-div{
-    width: 100%;
+    width: 25%;
+    margin: auto;
 }
 
 .navbar{
-    width: 470px;
+    width: 460px;
     margin: auto;
     margin-top: 20px;
 }
@@ -39,8 +63,9 @@ body{
     color: white;
     text-decoration: none;
     width: 24%;
-    font-size: 25px;
-    padding: 2%;
+    font-size: 18px;
+    padding: 1% 2%;
+    border-radius: 5px;
     
 }
 
