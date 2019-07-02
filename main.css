@@ -1,0 +1,54 @@
+body{
+    background-color: #5b5d61;
+    color: white;
+    font-family: exo-light;
+}
+
+#fade{
+    opacity: 0;
+    -webkit-transition: opacity 2s ease;
+    -moz-transition: opacity 2s ease;
+    -ms-transition: opacity 2s ease;
+    -o-transition: opacity 2s ease;
+    transition: opacity 2s ease;
+}
+
+#fade.in{
+    opacity: 1;
+}
+
+.first-img{
+    border-radius: 50%;
+    width: 30%;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-div{
+    width: 100%;
+}
+
+.navbar{
+    width: 470px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.nav-item{
+    color: white;
+    text-decoration: none;
+    width: 24%;
+    font-size: 25px;
+    padding: 2%;
+    
+}
+
+.nav-item:hover{
+    background-color: #4e5054;
+}
+
+@font-face{
+    font-family: exo-light;
+    src: url(Exo-Light.ttf)
+}
