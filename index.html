@@ -13,13 +13,13 @@
             <nav id="navbar">
                 <a class= "nav-item" href="#about">About Me</a>
                 <a class= "nav-item" href="#education">Education</a>
-                <a class= "nav-item" onclick="sayHi()" href="">Work Experience</a>
+                <a class= "nav-item" href="#work" href="">Work Experience</a>
                 <a class= "nav-item" href="">Portfolio</a>
             </nav>
             <div id="hidden-navbar">
                 <header class="hidden-header">Mohammad Omer</header>
                 <a class= "hidden-nav-item" href="">Portfolio</a>
-                <a class= "hidden-nav-item" onclick="sayHi()" href="">Work Experience</a>
+                <a class= "hidden-nav-item" href="#work" href="">Work Experience</a>
                 <a class= "hidden-nav-item" href="#education">Education</a>
                 <a class= "hidden-nav-item" href="#about">About Me</a>
             </div>
@@ -28,13 +28,14 @@
                 <img class="first-img fade-in" src="main-pic.jpg" alt="">
             </div>
         </div>
-        <div class="about-div" id="about">
+        <a class="anchor" id="about"></a>
+        <div class="white-div anchor">
             <div class="content">
-                <div class="text-img">
-                    <img class="about-img" src="about-img.jpg" alt="">
+                <h1 class="text-header-right">About me</h1>
+                <div class="text-about-img">
+                    <img class="work-img" src="about-img.jpg" alt="">
                 </div>
                 <div class="info">
-                    <h1 class="text-header-right">About me</h1>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacus erat, scelerisque in mi tristique, bibendum tincidunt ligula. Cras id augue cursus, iaculis eros quis, dapibus elit. Fusce feugiat nec dui non condimentum. Morbi in nisl lorem. Morbi ac maximus lacus, a porta nunc. Etiam eleifend diam vel viverra blandit. Quisque eget dapibus ante, sit amet dapibus erat. Mauris sit amet libero porttitor sapien mattis fringilla. Sed at iaculis neque. Nam pulvinar elit vitae tincidunt consectetur. Suspendisse dui quam, molestie at dolor et, condimentum auctor neque. Suspendisse interdum risus vel condimentum posuere. Suspendisse volutpat suscipit gravida. Integer feugiat sodales eros, quis egestas velit vehicula et. Sed et lectus iaculis purus mattis tempor non nec ipsum. Praesent sit amet urna maximus, fringilla justo sit amet, egestas erat.
 
@@ -43,7 +44,8 @@
                 </div>
             </div>
         </div>
-        <div class="education-div" id="education">
+        <a class="anchor" id="education"></a>
+        <div class="education-div anchor">
             <div class="content">
                 <div class="text-header-left">
                     <h1>Education</h1>
@@ -70,6 +72,48 @@
                         <img src="calpoly.jpeg" alt="">
                     </div>
                 </div>
+            </div>
+        </div>
+        <a class="anchor" id="work"></a>
+        <div class="white-div" >
+            <div class="content">
+                    <h1 class="text-header-right">Work Experience</h1>
+                    <div class="text-img">
+                        <img class="work-img" src="qte.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h2>Web Developer</h2>
+                        <h4><i>QTE Development, Stockholm</i></h4>
+                        <ul>
+                            <li>Developed websites for a start up consulting firm.</li>
+                            <li>Worked in HTML & CSS.</li>
+                            <li>Increased skills in searching for resources, coding on a more pressed time schedule and how to adapt to clients.</li>
+                        </ul>
+                    </div>
+                    <div class="text-img">
+                            <img class="work-img" src="Br_logo.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h2>Salesperson</h2>
+                        <h4><i>BR Toy Store, Stockholm</i></h4>
+                        <ul>
+                            <li>Helped customers, operated the register and set up the store.</li>
+                            <li>Worked in fast-paced environment.</li>
+                            <li>Learned how to accommodate customers, prioritize work assignments and handle stress from hectic periods like Christmas.</li>
+                        </ul>
+                    </div>
+                    <div class="text-img">
+                            <img class="work-img" src="tutor.jpeg" alt="">
+                    </div>
+                    <div class="info">
+                        <h2>Tutor</h2>
+                        <h4><i>School Saver, Stockholm</i></h4>
+                        <ul>
+                            <li>Tutored middle school students for a tutoring start up</li>
+                            <li>Helped the students with math and science.</li>
+                            <li>Got more pedagogical and better at expressing solutions to others.</li>
+                        </ul>
+                    </div>
             </div>
         </div>
     </body>

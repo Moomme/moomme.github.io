@@ -1,8 +1,15 @@
-.about-div{
+.white-div{
     background-color: #FBF7F5;
     color: black;
+    text-align: center;
 }
 
+a.anchor {
+    display: block;
+    position: relative;
+    top: -6%;
+    visibility: hidden;
+}
 .about-img{
     margin: 10% 5%;
     width: 90%;
@@ -18,7 +25,8 @@ body{
 
 .content{
     width: 1000px;
-    margin: auto;
+    margin: 0 auto;
+    display: inline-block;
 }
 
 .edu-img{  
@@ -47,7 +55,9 @@ body{
 
 .education-div{
     height: 40%;
-    background-image: url(code.png)
+    background-image: url(code.png);
+    background-position: 1250px 0;
+    text-align: center;
 }
 
 /* make keyframes that tell the start state and the end state of our object */
@@ -168,6 +178,9 @@ html{
 
 .text-header-right{
     text-align: right;
+    width: 100%;
+    margin: 0;
+    padding: 2% 15% 2% 0;
 }
 
 .text-header-left{
@@ -175,8 +188,18 @@ html{
     width: 100%;
 }
 
-.text-img{
+.text-about-img{
     width: 33%;
+    float: left;
+}
+.text-img{
+    width: 19%;
+    float: left;
+}
+
+.work-img{
+    margin: 5% 5% 10%  5%;
+    width: 90%;
     float: left;
 }
 
