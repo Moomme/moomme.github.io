@@ -1,21 +1,76 @@
 <html>
     <head>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script type="text/javascript" src="myscript.js"></script>
         <link rel="stylesheet" href="main.css">
         <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     </head>
     <body text="white">
-        <div class="header-div">
-            <header>Mohammad Omer</header>
+        <div class="hero-img">
+            <div class="header-div">
+                <header>Mohammad Omer</header>
+            </div>
+            <nav id="navbar">
+                <a class= "nav-item" href="#about">About Me</a>
+                <a class= "nav-item" href="#education">Education</a>
+                <a class= "nav-item" onclick="sayHi()" href="">Work Experience</a>
+                <a class= "nav-item" href="">Portfolio</a>
+            </nav>
+            <div id="hidden-navbar">
+                <header class="hidden-header">Mohammad Omer</header>
+                <a class= "hidden-nav-item" href="">Portfolio</a>
+                <a class= "hidden-nav-item" onclick="sayHi()" href="">Work Experience</a>
+                <a class= "hidden-nav-item" href="#education">Education</a>
+                <a class= "hidden-nav-item" href="#about">About Me</a>
+            </div>
+
+            <div class="img-div"> 
+                <img class="first-img fade-in" src="main-pic.jpg" alt="">
+            </div>
         </div>
-        <nav class="navbar">
-            <a class= "nav-item" href="">About Me</a>
-            <a class= "nav-item" href="">Education</a>
-            <a class= "nav-item" href="">Work Experience</a>
-            <a class= "nav-item" href="">Portfolio</a>
-        </nav>
-       <div class="img-div"> 
-            <img class="first-img fade-in" src="main-pic.jpg" alt="">
+        <div class="about-div" id="about">
+            <div class="content">
+                <div class="text-img">
+                    <img class="about-img" src="about-img.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h1 class="text-header-right">About me</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacus erat, scelerisque in mi tristique, bibendum tincidunt ligula. Cras id augue cursus, iaculis eros quis, dapibus elit. Fusce feugiat nec dui non condimentum. Morbi in nisl lorem. Morbi ac maximus lacus, a porta nunc. Etiam eleifend diam vel viverra blandit. Quisque eget dapibus ante, sit amet dapibus erat. Mauris sit amet libero porttitor sapien mattis fringilla. Sed at iaculis neque. Nam pulvinar elit vitae tincidunt consectetur. Suspendisse dui quam, molestie at dolor et, condimentum auctor neque. Suspendisse interdum risus vel condimentum posuere. Suspendisse volutpat suscipit gravida. Integer feugiat sodales eros, quis egestas velit vehicula et. Sed et lectus iaculis purus mattis tempor non nec ipsum. Praesent sit amet urna maximus, fringilla justo sit amet, egestas erat.
+
+                        Fusce lobortis enim in enim congue, ut aliquam mauris dignissim. Donec in commodo nulla. Nullam ac vestibulum nunc. Curabitur sodales lectus sapien, gravida porttitor metus viverra sed. Etiam ut sollicitudin nibh. Phasellus id rhoncus massa. Nam luctus, erat a placerat placerat, sem turpis feugiat velit, non pretium est libero sit amet neque. Aenean auctor nisl consectetur nisi suscipit ultrices. Maecenas justo turpis, tempus vitae risus quis, faucibus ultrices nisl.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="education-div" id="education">
+            <div class="content">
+                <div class="text-header-left">
+                    <h1>Education</h1>
+                </div>
+                <div class="KTH">
+                    <div class="edu-info">
+                        <p class="edu-text">
+                            Aug 2016 - June 2021  M.Sc Computer Science at KTH Royal Institute of Technology, Stockholm <br>
+                            GPA: 4.75
+                        </p>
+                    </div>
+                    <div class="edu-img">
+                        <img src="kth.png" alt="">
+                    </div>
+                </div>
+                <div class="Cal-Poly">
+                    <div class="edu-info">
+                        <p class="edu-text">
+                            Sep 2018 - June 2019 International Exchange Studies at California Polytechnic State University <br>
+                            Computer Science
+                        </p>
+                    </div>
+                    <div class="edu-img">
+                        <img src="calpoly.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 </html>
