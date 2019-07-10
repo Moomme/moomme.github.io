@@ -16,16 +16,24 @@
                 <a class= "nav-item" href="">Portfolio</a>
             </nav>
             <div id="hidden-navbar">
-                <header class="hidden-header">Mohammad Omer</header>
+                <a href="#"><header class="hidden-header">Mohammad Omer</header></a>
                 <a class= "hidden-nav-item" href="">Portfolio</a>
                 <a class= "hidden-nav-item" href="#work" href="">Work Experience</a>
                 <a class= "hidden-nav-item" href="#education">Education</a>
                 <a class= "hidden-nav-item" href="#about">About Me</a>
-                <button onclick="sayHi()" class="navbar-burger">
-                    <hr class="burger-line">
-                    <hr class="burger-line">
-                    <hr class="burger-line">
-                </button>
+                <div class="dropdown">
+                    <button onclick="dropdown()" class="navbar-burger">
+                        <hr class="burger-line">
+                        <hr class="burger-line">
+                        <hr class="burger-line">
+                    </button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a class= "hidden-nav-item" href="">Portfolio</a>
+                        <a class= "hidden-nav-item" href="#work" href="">Work Experience</a>
+                        <a class= "hidden-nav-item" href="#education">Education</a>
+                        <a class= "hidden-nav-item" href="#about">About Me</a>
+                    </div>
+                </div>
             </div>
 
             <div class="img-div"> 
@@ -190,5 +198,14 @@
             </div>
         </div>
         <script type="text/javascript" src="myscript.js"></script>
+        <div class="footer">
+            <p>Developed by Mohammad-Ali Omer© (last updated: 10/07-2019)</p>
+            <div class="footer-content">
+                <a href="http://github.com/moomme"><img src="git.png" alt=""></a>
+                <a href="mailto:maomer@kth.se"><img src="email.png" alt=""></a>
+                <a href="http://linkedin.com/in/omermo"><img src="linkedin.png" alt=""></a>
+            </div>
+        
+        </div>
     </body>
 </html>
