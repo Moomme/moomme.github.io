@@ -21,17 +21,19 @@ function sayHi(){
 //   }
 // }
 
-$(document).ready(function() {
-    $("#hidden-navbar").hide(); //hide your div initially
-    var topOfOthDiv = $("#navbar").offset().top;
-    $(window).scroll(function() {
-        if($(window).scrollTop() > topOfOthDiv) { //scrolled past the other div?
-            $("#hidden-navbar").show(200); //reached the desired point -- show div
-        } else {
-        	$("#hidden-navbar").hide(200);
-        }
+if (document.documentElement.clientWidth > 800){
+    $(document).ready(function() {
+        $("#hidden-navbar").hide(); //hide your div initially
+        var topOfOthDiv = $("#navbar").offset().top;
+        $(window).scroll(function() {
+            if($(window).scrollTop() > topOfOthDiv) { //scrolled past the other div?
+                $("#hidden-navbar").show(200); //reached the desired point -- show div
+            } else {
+                $("#hidden-navbar").hide(200);
+            }
+        });
     });
-});
+}
 
 var slideIndex = 1;
 

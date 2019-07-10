@@ -16,11 +16,13 @@ a.anchor {
     float: left;
 }
 
+
 body{
     background-color: #3c3c3d;
     color: white;
     font-family: exo-light;
     margin: 0;
+    width: 100%;
 }
 
 .content{
@@ -103,7 +105,9 @@ body{
 
 .hero-img{
     height: 100%;
-    background-image: url(Website-Design-Background.jpg)
+    max-height: 1000px;
+    background-image: url(Website-Design-Background.jpg);
+    background-size: cover; 
 }
 
 .hidden-header{
@@ -120,7 +124,7 @@ body{
     z-index: 99;
     top: 0;
     height: 6%;
-    background: black;
+    background: #3c3c3d;
 }
 
 .hidden-nav-item{
@@ -166,6 +170,32 @@ html{
     margin: auto;
     margin-top: 20px;
 }
+
+.navbar-burger{
+    display: none;
+    background: none;
+    border-style: none;
+    margin: 1%;
+    margin-right: 5%;
+    width: 60px;
+    float: right;
+    outline: none;
+}
+
+.navbar-burger:hover{
+    width: 55px;
+    cursor: pointer;
+}
+
+.burger-line{
+    border-style: solid;
+    border-color: white;
+    margin: 30% 0;
+    border-width: 2px;
+    border-radius: 2%;
+    width: 100%;
+}
+
 
 .nav-item{
     color: white;
@@ -219,6 +249,9 @@ html{
     background-color: black;
     text-align: center;
 }
+
+
+
 
 .projects{
     height: 90%;
@@ -400,6 +433,62 @@ slide p {
     to {opacity: 1}
   }
   
+@media screen and (max-width: 1000px) {
+
+    .hero-img{
+        height: auto ;
+    }
+    .work-img{
+        display: none;
+    }
+    .content{
+        width: 90%;
+    }
+
+    .img-div{
+        width: 90%;
+    }
+
+    .education-div{
+        height: auto;
+    }
+
+    .portfolio{
+        height: 30%;
+    }
+
+}
+
+@media screen and (max-width: 980px) {
+    .header-div{
+        display: none;
+    }
+
+    #navbar{
+        display: none;
+    }
+
+    #hidden-navbar{
+        display: block!important;
+        height: 12%;
+        
+    }
+
+    .navbar-burger{
+        display: block;
+    }
+
+    .hidden-nav-item{
+        display: none;
+    }
+
+    .hidden-header{
+        font-size: calc(3vw + 3vh);
+        margin: 2% 5%;
+
+    }
+}
+
   /* On smaller screens, decrease text size */
   @media only screen and (max-width: 300px) {
     .prev, .next,.text {font-size: 11px}
