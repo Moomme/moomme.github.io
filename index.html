@@ -21,7 +21,7 @@
                 <a class= "hidden-nav-item" href="#work" href="">Work Experience</a>
                 <a class= "hidden-nav-item" href="#education">Education</a>
                 <a class= "hidden-nav-item" href="#about">About Me</a>
-                <div class="dropdown">
+                <!-- <div class="dropdown">
                     <button onclick="dropdown()" class="navbar-burger">
                         <hr class="burger-line">
                         <hr class="burger-line">
@@ -30,10 +30,26 @@
                 </div>
             </div>
             <div id="myDropdown" class="dropdown-content">
-                <a class= "hidden-nav-item" href="#portfolio">Portfolio</a>
-                <a class= "hidden-nav-item" href="#work" href="">Work Experience</a>
-                <a class= "hidden-nav-item" href="#education">Education</a>
-                <a class= "hidden-nav-item" href="#about">About Me</a>
+                <a class= "hidden-nav-item dropdown-item" href="#portfolio">Portfolio</a>
+                <a class= "hidden-nav-item dropdown-item" href="#work" href="">Work Experience</a>
+                <a class= "hidden-nav-item dropdown-item" href="#education">Education</a>
+                <a class= "hidden-nav-item dropdown-item" href="#about">About Me</a> -->
+            </div>
+            <div class="mobile-navbar">
+                <a href="#"><header class="hidden-header">Mohammad Omer</header></a>
+                <div class="dropdown">
+                    <button onclick="dropdown()" class="navbar-burger">
+                        <hr class="burger-line">
+                        <hr class="burger-line">
+                        <hr class="burger-line">
+                    </button>
+                </div>
+                <div id="myDropdown" class="dropdown-content">
+                    <a class= "dropdown-item" href="#about" onclick="$('#myDropdown').hide(200);">About Me</a>
+                    <a class= "dropdown-item" href="#education" onclick="$('#myDropdown').hide(200);">Education</a>
+                    <a class= "dropdown-item" href="#work" onclick="$('#myDropdown').hide(200);">Work Experience</a>
+                    <a class= "dropdown-item" href="#portfolio" onclick="$('#myDropdown').hide(200);">Portfolio</a>
+                </div>
             </div>
 
             <div class="img-div"> 
@@ -140,7 +156,8 @@
                             <div class="project"> 
                                 <h4>Mastermind</h4>
                                 <h5>Java</h5>
-                                <p class="proj-description">This is an implementation of the classic code-breaking board game with the same name, Mastermind.
+                                <p class="proj-description">
+                                    This is an implementation of the classic code-breaking board game with the same name, Mastermind.
                                     The project is written in Java and the game is played in the command line.
                                 </p>
                                 <a class="project-btn" href="https://github.com/Moomme/mastermind">Take me there</a>
@@ -152,8 +169,9 @@
                         <div class="numbertext">2 / 3</div>
                         <div class="projects">
                             <div class="project"> 
-                                <h4>project 2</h4>
-                                <h5>python</h5>
+                                <h4>This Website</h4>
+                                <h5>HTML/CSS/JS</h5>
+                                <a class="project-btn" href="https://github.com/Moomme/moomme.github.io">Take me there</a>
                             </div>
                         </div>
                     </div>
@@ -161,7 +179,13 @@
                     <div class="mySlides fade">
                         <div class="numbertext">3 / 3</div>
                         <div class="projects">
-                            <div class="project"> <h4>project 3</h4></div>
+                            <div class="project"> 
+                                <h4>More to come soon...</h4>
+                                <p class="proj-description">
+                                    For more projects that can't be publicized due to being school work, please contact me. 
+                                    I have made multiple projects in Java, C and Python and a handful in Haskell and Prolog.
+                                </p>
+                            </div>
                         </div>
                     </div>
                     
