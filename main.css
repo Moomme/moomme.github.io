@@ -217,7 +217,6 @@ html{
 }
 
 .navbar-burger:hover{
-    width: 55px;
     cursor: pointer;
 }
 
@@ -492,6 +491,7 @@ slide p {
   .dropdown-content {
     display: none;
     background-color: #3c3c3d;
+    margin-top: 20%;
     width: 100%;
     height: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -583,6 +583,10 @@ slide p {
 
     .footer-content img{
         margin: 1% 3%;
+    }
+
+    .portfolio h1{
+        font-size: 450%;
     }
 
     .project h4{
