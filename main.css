@@ -625,6 +625,11 @@ slide p {
     z-index: 100;
 }
 
+.mobile-name{
+    overflow: auto;
+    float: left;
+    width: 82%;
+}
 @media screen and (max-width: 980px) {
 
     .header-div{
@@ -661,8 +666,6 @@ slide p {
     .hidden-header{
         font-size: calc(3vw + 3vh);
         margin: 2% 1%;
-        max-width: 80%;
-
     }
 
     ,
